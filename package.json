@@ -1,0 +1,9 @@
+{"name": "njax-email", "version": "0.0.1", "private": true, "scripts": {
+    "start": "node app.js"
+}, "dependencies": {
+    "async": "*",
+
+    "underscore": "*",
+    "njax-app": "git+ssh://git@github.com:schematical/njax-app#master"
+
+}}
