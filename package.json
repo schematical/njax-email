@@ -2,7 +2,6 @@
     "start": "node app.js"
 }, "dependencies": {
     "async": "*",
-
     "underscore": "*",
     "njax-app": "git+ssh://git@github.com:schematical/njax-app#master"
 
