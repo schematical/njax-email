@@ -4,7 +4,7 @@
         <div class="col-md-3">
             <select ng-class="{ 'has-success': emailSettingCatigory.account_setting._saved, 'has-warning': emailSettingCatigory.account_setting._changed }" ng-model="emailSettingCatigory.account_setting.type" ng-options="opt.val as opt.name for opt in [{ val:'allow', name:'Allow' }, { val:'block', name:'Block'}]" ng-change="saveAccountSetting(emailSettingCatigory.account_setting);"></select>
         </div>
-        <label class="col-md-3"  ng-bind="emailSettingCatigory.name">Email</label>
+        <label class="col-md-3"  ng-bind="emailSettingCatigory.name"></label>
 
 
         <div class="col-md-6">
