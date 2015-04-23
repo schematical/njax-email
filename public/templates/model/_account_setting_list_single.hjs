@@ -1,0 +1,32 @@
+<tr>
+    
+    
+    <td>
+        {{ owner }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ filter }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ type }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ archiveDate }}
+    </td>
+    
+
+    
+    
+</tr>

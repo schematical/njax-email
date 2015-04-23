@@ -1,0 +1,30 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ account_setting.name }}<small>{{{ account_setting.desc }}}</small></h1>
+</div>
+
+    <h3>Owner</h3>
+    
+        {{ account_setting.owner }}
+    
+
+    <h3>Filter</h3>
+    
+        {{ account_setting.filter }}
+    
+
+    <h3>Type</h3>
+    
+        {{ account_setting.type }}
+    
+
+    <h3>ArchiveDate</h3>
+    
+        {{ account_setting.archiveDate }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ account_setting.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

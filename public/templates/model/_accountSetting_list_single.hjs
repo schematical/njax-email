@@ -1,0 +1,32 @@
+<tr>
+    
+    
+    <td>
+        {{ owner }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ setting_namespace }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ type }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ archiveDate }}
+    </td>
+    
+
+    
+    
+</tr>

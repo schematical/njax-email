@@ -5,6 +5,7 @@
     "underscore": "*",
     "hogan.js":"*",
     "postmark":"*",
+    "mkdirp":"*",
     "njax-app": "git+ssh://git@github.com:schematical/njax-app#master"
 
 }}

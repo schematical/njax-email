@@ -1,0 +1,57 @@
+
+
+<form role="form" action='/account_settings/{{ account_setting._id }}' method='POST' enctype="multipart/form-data"  ng-controller="Account_settingEditFormCtrl">
+    
+        
+            {{^ account }}
+            <div class="form-group">
+                <label for="owner">owner</label>
+                <select id="owner" name='owner' value='{{ account_setting.owner }}'  ng-model="account_setting.owner">
+                    {{# owners }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ owners }}
+                </select>
+            </div>
+             {{/ account }}
+        
+    
+        
+            <div class="form-group">
+                <label for="filter">filter</label>
+                <input name="filter" type="filter" class="form-control" id="filter" placeholder="Enter filter" value="{{ account_setting.filter }}"  ng-model="account_setting.filter">
+            </div>
+        
+    
+        
+<hr>
+            <div class="form-group">
+                <h4>type</h4>
+                
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="type" id="type_allow" value="allow" {{# type_allow_selected }}checked{{/type_allow_selected}}  ng-model="account_setting.type">
+                            Allow
+                        </label>
+                    </div>
+                
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="type" id="type_block" value="block" {{# type_block_selected }}checked{{/type_block_selected}}  ng-model="account_setting.type">
+                            Block
+                        </label>
+                    </div>
+                
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="archiveDate">archiveDate</label>
+                <input name="archiveDate" type="archiveDate" class="form-control" id="archiveDate" placeholder="Enter archiveDate" value="{{ account_setting.archiveDate }}"  ng-model="account_setting.archiveDate">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default" ng-submit="save($event);">Submit</button>
+</form>

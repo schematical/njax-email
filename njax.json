@@ -1,51 +1,49 @@
 {
-    "app_name":"njax-email",
-    /*"is_platform":true,*/
-    "frameworks":{
-        "angular":"angular",
-    },
-    "models":{
-        "account_setting":{
-
-            "uri_prefix":"/account_settings",
-            "fields":{
-                "owner":{
-                    "type":"ref",
-                    "ref":"account",
-                    "bootstrap_populate":"req.user"
-                },
-                "filter":"string",
-                "type": {
-                    "type":"tpcd",
-                    "options":{
-                        "allow":"Allow",
-                        "block":"Block"
-                    }
-                },
-                "archiveDate":"date"
-            }
-        }
-    },
-    "bower":{
-        "dependencies":{
-			"font-awesome":"*",
-			"angular":"*",
-			"angular-route":"*",
-			"angular-cookies":"*",
-			"angular-resource":"*",
-			"angular-strap":"*",
-			"jquery": "*",
-			"chosen": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
-        }
-    },
-    "package":{
-        "dependencies":{
-            "mkdirp":"*",
-            "hogan.js":"*",
-            "aws-sdk":"*",
-            "request":"*",
-            "markdown":"*",
-            "passport-stripe":"*"
-        }
+  "app_name": "njax-email",
+  "frameworks": {
+    "angular": "angular"
+  },
+  "models": {
+    "accountSetting": {
+      "uri_prefix": "/account_settings",
+      "fields": {
+        "owner": {
+          "type": "ref",
+          "ref": "account",
+          "bootstrap_populate": "req.user"
+        },
+        "setting_namespace": "string",
+        "type": {
+          "type": "tpcd",
+          "options": {
+            "allow": "Allow",
+            "block": "Block"
+          }
+        },
+        "archiveDate": "date"
+      }
     }
+  },
+  "bower": {
+    "dependencies": {
+      "font-awesome": "*",
+      "angular": "*",
+      "angular-route": "*",
+      "angular-cookies": "*",
+      "angular-resource": "*",
+      "angular-strap": "*",
+      "jquery": "*",
+      "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+    }
+  },
+  "package": {
+    "dependencies": {
+      "mkdirp": "*",
+      "hogan.js": "*",
+      "aws-sdk": "*",
+      "request": "*",
+      "markdown": "*",
+      "passport-stripe": "*"
+    }
+  }
 }
