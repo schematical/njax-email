@@ -7,7 +7,7 @@
 <script src="/js/directives.js"></script>
 <script src="/js/filters.js"></script>
 
-    <script src="/js/services/account_setting.js"></script>
-    <script src="/js/controllers/account_setting.js"></script>
-    <script src="/js/directives/account_setting.js"></script>
+    <script src="/js/services/accountSetting.js"></script>
+    <script src="/js/controllers/accountSetting.js"></script>
+    <script src="/js/directives/accountSetting.js"></script>
 

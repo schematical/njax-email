@@ -44,6 +44,7 @@ angular.module('njax.email.directives', [])
 			}
 			scope.saveAccountSetting = function(account_setting){
 				account_setting._changed = true;
+				account_setting.hash = NJaxBootstrap._hash;
 				account_setting.$save(function(){
 					account_setting._changed = false;
 					account_setting._saved = true;
